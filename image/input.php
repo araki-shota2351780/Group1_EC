@@ -10,7 +10,6 @@
     <form action="image.php" method="POST" enctype="multipart/form-data">
         <fieldset>
             <legend>入力画面</legend>
-            <a href="read.php">一覧画面</a>
             <div>
                 title: <input type="text" name="title">
             </div>
