@@ -1,0 +1,15 @@
+.convenience-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .convenience-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .convenience-item img {
+    width: 30px; /* ロゴのサイズを調整 */
+    height: auto;
+    margin-right: 10px; /* ロゴとテキストの間隔 */
+  }

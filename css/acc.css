@@ -1,0 +1,167 @@
+/* スマホ画面用のリセット */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0; /* 背景色を少し薄く */
+}
+
+/* コンテナ全体の幅を固定する */
+.container {
+    width: 100%;
+    max-width: 375px; /* スマホの標準幅で固定 */
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 少し影をつけて */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+
+header button {
+    font-size: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-box {
+    width: 60%;
+    padding: 5px;
+}
+
+.cart-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background-color: #f8f8f8;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li a.active {
+    color: #fff;
+    background-color: #333;
+}
+
+main {
+    padding: 10px;
+}
+
+.category {
+    margin-bottom: 15px;
+}
+
+.category h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #333;
+    padding-bottom: 4px;
+}
+
+.items {
+    display: flex;
+    overflow-x: auto; /* 横スクロール可能に設定 */
+    gap: 10px;
+    padding-bottom: 10px; /* スクロールバーが表示される場合のスペース */
+}
+
+.items::-webkit-scrollbar {
+    height: 8px;
+}
+
+.items::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.items::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.item {
+    min-width: 120px; /* アイテムの最小幅を設定 */
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.item p {
+    margin-top: 4px;
+    font-size: 12px;
+}
+
+/*画像を囲むコンテナの設定*/
+.image-container {
+    position: relative; /* 画像を基準に要素を配置する */
+    display: inline-block;
+}
+
+/* 画像の設定 */
+.image-container img {
+    display: block;
+    width: 100%; 
+    height: auto;
+}
+
+/* 画像上のボタンの設定 */
+.button-on-image {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 12px;
+    height: 12px;
+    background-color: rgba(128, 128, 128, 0.8);
+    color: black;
+    border: none;
+    border-radius: 50%;
+    font-size: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* 色変化のアニメーション */
+}
+
+/* ホバー時のボタンの色変更 */
+.button-on-image:hover {
+    background-color: rgba(128, 128, 128, 1); /* マウスホバー時の色 */
+}

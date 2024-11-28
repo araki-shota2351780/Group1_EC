@@ -1,0 +1,78 @@
+/* ボディ全体にスタイルを追加 */
+body {
+    min-height: 100vh; /* ビューポートの高さ */
+    margin: 0;
+    display: flex;
+    justify-content: center; /* 横方向に中央揃え */
+    align-items: center;     /* 縦方向に中央揃え */
+    background-color: #f4f4f4; /* 背景色を追加（任意） */
+} 
+
+/* フォームを囲むコンテナのスタイル */
+.container {
+    position: relative; /* コンテナ内の要素を相対位置で配置 */
+    text-align: left;    /* テキスト左揃え */
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 375px; /* フォームの最大幅 */
+    min-height: 600px;
+    box-sizing: border-box;
+}
+
+/* 閉じるボタンの位置 */
+.close-button {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* 右上に配置 */
+    font-size: 20px;
+    cursor: pointer;
+}
+
+h5 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+input[type="date"],
+input[type="number"],
+input[type="email"],
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* 'name' id を持つ入力欄の幅はそのまま */
+#name {
+    width: 40%;
+}
+
+/* その他の入力欄の幅を2倍に変更 */
+#deli_date,
+#address {
+    width: 95%; /* 幅を2倍に */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
