@@ -11,33 +11,31 @@
 <div class="main-content">
 <h1>商品登録</h1>
 <div class="photo-upload">
-
                 写真追加
 </div>
-<form>
-<label>ID入力</label>
-<input type="text" placeholder="ID入力">
-<label>名前入力</label>
-<input type="text" placeholder="名前入力">
-<label>価格入力</label>
-<input type="text" placeholder="価格入力">
-<label>初期個数の変更</label>
-<input type="number" value="100">
-<label>説明：</label>
-<textarea rows="4" placeholder="説明を入力"></textarea>
+<form action="entrysucces.php" method="POST">
+<label for="merch_id">ID入力</label>
+<input type="text" id="merch_id" name="merch_id" placeholder="ID入力">
+
+<label for="merch_name">名前入力</label>
+<input type="text" id="merch_name" name="merch_name" placeholder="名前入力">
+
+<label for="merch_amount">価格入力</label>
+<input type="text" id="merch_amount" name="merch_amount" placeholder="価格入力">
+
+<label for="merch_quantity">初期個数の変更</label>
+<input type="number" id="merch_qua" name="merch_qua" value="100">
+
+<label for="merch_date">説明：</label>
+<textarea id="merch_date" name="merch_date" rows="4" placeholder="説明を入力"></textarea>
+
+<button type="submit" class="button">登録</button>
 </form>
 </div>
 <div class="side-content">
 <p>STEP 1 確認後、管理者IDを入力</p>
-<input type="text" value="admin_ASOEC">
-<button class="button">登録</button>
-<br>
-<br>
-<br>
-<br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<p><p></p></p><img src="./img/普通の家のアイコン.png" width="50px">
+<input type="text" value="admin_ASOEC" disabled>
 </div>
 </div>
 </body>
-</html> 
+</html>
