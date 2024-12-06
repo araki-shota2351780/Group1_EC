@@ -26,14 +26,11 @@
 
         <!--DB接続-->
         <?php
+            $dsn = 'mysql:host=mysql304.phy.lolipop.lan;dbname=LAA1554924-php2024;charset=utf8;';
+            $username = 'LAA1554924';
+            $pw = 'Pass0811';
             try{
-                $pdo = new PDO(
-                      'mysql:host=mysql304.phy.lolipop.lan;
-                       dbname=LAA1554924-php2024;
-                       charset=utf8;',
-                      'LAA1554924',
-                      'Pass0811'
-                );
+                $pdo = new PDO($dsn,$username,$pw);
                 $pdo->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
             
                 $stmt = $pdo->prepare("SELECT image FROM merchandise WHERE merch_id BETWEEN :start_id AND :end_id");
