@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECサイト</title>
+    <link rel="stylesheet" href="/AsoEC/css/merchandise.css">
+</head>
+<body>
+    <!-- ヘッダーセクション -->
+    <header class="navbar">
+        <button id="home-button" onclick="history.back()">ホームへ戻る</button>
+        <nav class="tabs">
+            <!-- カテゴリフィルタ -->
+            <button class="tab" data-category="m">MAN</button>
+            <button class="tab" data-category="w">WOMEN</button>
+            <button class="tab" data-category="a">ACC</button>
+        </nav>
+    </header>
+
+    <!-- サイズフィルタ -->
+    <div class="size-filters">
+        <!-- サイズフィルタボタン -->
+        <button class="size-filter" data-size="S">S</button>
+        <button class="size-filter" data-size="M">M</button>
+        <button class="size-filter" data-size="L">L</button>
+        <button class="size-filter" data-size="O">O</button>
+    </div>
+
+    <!-- 商品一覧セクション -->
+    <main>
+        <div id="merchandise-grid" class="grid-container">
+            <!-- JavaScriptで商品アイテムが挿入されます -->
+        </div>
+    </main>
+
+    <!-- スクリプト -->
+    <script src="/AsoEC/js/merchandise.js"></script>
+</body>
+</html>
